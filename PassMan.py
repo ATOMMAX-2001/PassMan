@@ -211,7 +211,6 @@ def change_password():
 				cursor.execute('''UPDATE passManClient SET password="'''+new_password+'''"WHERE username="'''+PassMan_user+'''" ''')
 				print("Password Changed Successfully!!")
 				connUsers.commit()
-				connUsers.close()
 			else:
 				os.system("cls")
 				print("\nWrong Password!!")
